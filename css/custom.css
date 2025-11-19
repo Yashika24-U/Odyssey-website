@@ -3164,6 +3164,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   top: 0;
   right: 0;
   background: url(../images/accent-arrow.svg) no-repeat;
+  filter: invert(1);
   background-position: right center;
   background-size: auto;
   width: 24px;
