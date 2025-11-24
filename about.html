@@ -134,6 +134,12 @@
     .btn-phone i {
       color: #ffffff;
     }
+
+    .nav-link img {
+      pointer-events: auto !important;
+      z-index: 9999 !important;
+      position: relative !important;
+    }
   </style>
   <body>
     <!-- Preloader Start -->
@@ -151,11 +157,16 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <!-- Logo Start -->
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="./index.html">
               <img
                 src="./img/logo-updated.png"
                 alt="Logo"
-                style="max-height: 100px; width: auto; border-radius: 5px"
+                style="
+                  max-height: 100px;
+                  width: auto;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
               />
             </a>
             <!-- Logo End -->
