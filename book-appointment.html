@@ -63,6 +63,124 @@
       src="https://assets.calendly.com/assets/external/widget.js"
       async
     ></script>
+
+    <style>
+      .appointment-container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        max-width: 650px;
+        width: 100%;
+        padding: 50px 40px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .header h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .header h2::before {
+        content: "📅";
+        font-size: 18px;
+      }
+
+      .appointment-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .appointment-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .appointment-item:last-child {
+        border-bottom: none;
+      }
+
+      .appointment-info h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 4px;
+      }
+
+      .appointment-info p {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .book-btn {
+        background: #000;
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .book-btn:hover {
+        background: #333;
+      }
+
+      .book-btn:active {
+        transform: scale(0.98);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .footer p {
+        font-size: 12px;
+        color: #999;
+        margin-bottom: 5px;
+      }
+
+      .footer .logo {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .appointment-container {
+          padding: 30px 20px;
+        }
+
+        .appointment-item {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+
+        .book-btn {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Preloader Start -->
@@ -178,146 +296,99 @@
     <div class="page-book-appointment">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <!-- Book Appointment Content Start -->
             <div class="book-appointment-content">
               <!-- Section Title Start -->
               <div class="section-title">
-                <h2 class="wow fadeInUp">Book an <span>appointment</span></h2>
+                <h2 class="wow fadeInUp">
+                  Schedule Your <span>Appointment</span>
+                </h2>
                 <p class="wow fadeInUp" data-wow-delay="0.2s">
-                  Take the first step toward your personal and professional
-                  growth! Schedule a session today to explore
+                  Schedule your consultation today to leverage our experts
+                  insights and drive your business forward. Our dedicated team
+                  is ready to provide tailored solutions to meet your
+                  organization's unique needs
                 </p>
               </div>
               <!-- Section Title Start -->
 
               <!-- Booking Timing Start -->
               <div class="booking-timing">
-                <!-- Booking Timing Title Start -->
                 <div
                   class="booking-timing-title wow fadeInUp"
                   data-wow-delay="0.4s"
-                >
-                  <h3>Working Time</h3>
-                </div>
-                <!-- Booking Timing Title End -->
+                ></div>
 
-                <!-- Booking Timing List Start -->
                 <div
                   class="booking-timing-list wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
-                  <ul>
-                    <li>Mon - Fri: <span>9:00am - 5:00pm</span></li>
-                    <li>Saturday: <span>10:00am - 6:00pm</span></li>
-                    <li>Sunday: <span>Closed</span></li>
-                  </ul>
+                  <figure class="image-anime">
+                    <img src="img/bookappointment.jpg" />
+                  </figure>
                 </div>
-                <!-- Booking Timing List End -->
               </div>
-              <!-- Booking Timing End -->
             </div>
             <!-- Book Appointment Content End -->
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <!-- Book Appointment Form Start -->
-            <div class="appointment-form">
-              <p class="wow fadeInUp">
-                Fill out the form below to request your business couch
-                appointment. We'll confirm your time and send you a reminder.
-              </p>
+            <div class="appointment-container">
+              <div class="header">
+                <h2>Select Appointment</h2>
+              </div>
 
-              <!-- Appointment Form Start -->
-              <!-- Appointment Form Start -->
-              <form
-                id="appointmentForm"
-                action="#"
-                method="POST"
-                class="wow fadeInUp"
-                data-wow-delay="0.25s"
-              >
-                <div class="row">
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter your name"
-                      required
-                    />
+              <div class="appointment-list">
+                <div class="appointment-item">
+                  <div class="appointment-info">
+                    <h3>Free Consultation</h3>
+                    <p>30 minutes</p>
                   </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="location"
-                      class="form-control"
-                      id="location"
-                      placeholder="Enter your location (optional)"
-                    />
-                  </div>
-
-                  <div class="form-group col-md-6 mb-4">
-                    <input
-                      type="text"
-                      name="recordno"
-                      class="form-control"
-                      id="recordno"
-                      placeholder="Enter your record no. (optional)"
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <button type="button" class="btn-default" id="scheduleBtn">
-                      Schedule Meeting
-                    </button>
-                  </div>
+                  <button
+                    class="book-btn"
+                    onclick="handleBooking('Free Consultation')"
+                  >
+                    BOOK
+                  </button>
                 </div>
-              </form>
 
-              <script
-                type="text/javascript"
-                src="https://assets.calendly.com/assets/external/widget.js"
-                async
-              ></script>
+                <div class="appointment-item">
+                  <div class="appointment-info">
+                    <h3>Basic Service</h3>
+                    <p>1 hour @ $99.00</p>
+                  </div>
+                  <button
+                    class="book-btn"
+                    onclick="handleBooking('Basic Service')"
+                  >
+                    BOOK
+                  </button>
+                </div>
 
-              <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const scheduleBtn = document.getElementById("scheduleBtn");
-
-                  scheduleBtn.addEventListener("click", function (e) {
-                    e.preventDefault();
-
-                    // Get form values
-                    const name =
-                      document.getElementById("name").value || "Guest";
-                    const email = document.getElementById("email").value || "";
-
-                    // Open Calendly popup
-                    Calendly.initPopupWidget({
-                      url: `https://calendly.com/yashikayeshi/30min?name=${encodeURIComponent(
-                        name
-                      )}&email=${encodeURIComponent(email)}`,
-                    });
-
-                    return false;
-                  });
-                });
-              </script>
+                <div class="appointment-item">
+                  <div class="appointment-info">
+                    <h3>Advanced Service</h3>
+                    <p>1 hour @ $199.00</p>
+                  </div>
+                  <button
+                    class="book-btn"
+                    onclick="handleBooking('Advanced Service')"
+                  >
+                    BOOK
+                  </button>
+                </div>
+              </div>
             </div>
+
+            <script>
+              function handleBooking(serviceType) {
+                alert(`Booking ${serviceType}...`);
+                // You can integrate with Calendly or your scheduling system here
+                // Example: Calendly.initPopupWidget({ url: 'your-calendly-url' });
+              }
+            </script>
             <script
               type="text/javascript"
               src="https://assets.calendly.com/assets/external/widget.js"
@@ -468,5 +539,28 @@
       src="https://assets.calendly.com/assets/external/widget.js"
       async
     ></script>
+
+    <script>
+      function handleBooking(serviceType) {
+        if (serviceType === "Free Consultation") {
+          Calendly.initPopupWidget({
+            url: "https://calendly.com/yashikayeshi/30min?timezone=America/Chicago",
+          });
+          return;
+        }
+
+        if (serviceType === "Basic Service") {
+          window.location.href =
+            "https://buy.stripe.com/test_8x2aEX0uz7IbcFN3ZPeIw00";
+          return;
+        }
+
+        if (serviceType === "Advanced Service") {
+          window.location.href =
+            "https://buy.stripe.com/test_dRm3cvelp3rVaxFcwleIw01";
+          return;
+        }
+      }
+    </script>
   </body>
 </html>
