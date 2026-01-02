@@ -340,12 +340,12 @@
               <div class="appointment-list">
                 <div class="appointment-item">
                   <div class="appointment-info">
-                    <h3>Free Consultation</h3>
-                    <p>30 minutes</p>
+                    <h3>Paid Consultation</h3>
+                    <p>30 minutes @ $100.00</p>
                   </div>
                   <button
                     class="book-btn"
-                    onclick="handleBooking('Free Consultation')"
+                    onclick="handleBooking('Paid Consultation')"
                   >
                     BOOK
                   </button>
@@ -539,7 +539,7 @@
 
     <script>
       function handleBooking(serviceType) {
-        if (serviceType === "Free Consultation") {
+        if (serviceType === "Paid Consultation") {
           Calendly.initPopupWidget({
             url: "https://calendly.com/yashikayeshi/30min?timezone=America/Chicago",
           });
