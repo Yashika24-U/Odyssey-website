@@ -35,7 +35,10 @@
     <!-- Font Awesome Icon Css-->
     <link href="css/all.css" rel="stylesheet" media="screen" />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
     <!-- Animated Css -->
     <link href="css/animate.css" rel="stylesheet" />
     <!-- Magnific Popup Core Css File -->
@@ -104,6 +107,21 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       color: transparent;
+    }
+    .hero-bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
     }
   </style>
   <body>
@@ -186,10 +204,14 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <div class="hero bg-section parallaxie">
+    <!-- <div class="hero bg-section parallaxie">
       <video class="hero-video" autoplay muted loop playsinline>
-        <source src="img/bannervideo.mp4" type="video/mp4" />
+        <source src="images/banner.png" type="video/mp4" />
       </video>
+      -->
+    <div class="hero bg-section parallaxie">
+      <img src="images/banner.png" alt="Hero Banner" class="hero-bg-image" />
+
       <div class="hero-section">
         <div class="container-fluid">
           <div class="row">
@@ -202,8 +224,14 @@
                   <h1 class="wow fadeInUp" data-wow-delay="0.2s">
                     CONSULT DEVELOP IMPLEMENT
                   </h1>
-                  <p class="wow fadeInUp" data-wow-delay="0.3s" style="color: var(--white-color);">
-                    Navigate your full potential. You have the ambition, we have the map. Discover the strategies to discover your personal and professional Odyssey with absolute clarity.
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-delay="0.3s"
+                    style="color: var(--white-color)"
+                  >
+                    Navigate your full potential. You have the ambition, we have
+                    the map. Discover the strategies to discover your personal
+                    and professional Odyssey with absolute clarity.
                   </p>
                 </div>
                 <!-- Section Title End -->
@@ -226,37 +254,68 @@
               <div
                 class="export-coaching-box wow fadeInUp"
                 data-wow-delay="0.6s"
-                style="justify-content: space-between; align-items: flex-start;"
+                style="justify-content: space-between; align-items: flex-start"
               >
                 <!-- Export Coaching Step Start -->
-                <div class="export-coaching-step" style="width: calc(33.33% - 67px); flex: 1;">
+                <div
+                  class="export-coaching-step"
+                  style="width: calc(33.33% - 67px); flex: 1"
+                >
                   <div class="icon-box">
-                    <i class="bi bi-binoculars" style="font-size: 30px; color: var(--white-color);"></i>
+                    <i
+                      class="bi bi-binoculars"
+                      style="font-size: 30px; color: var(--white-color)"
+                    ></i>
                   </div>
                   <div class="export-coaching-step-content">
-                    <p>We <strong>consult</strong> closely to develop a clear understanding of your surroundings and the challenges you are facing, so you can navigate with clarity and confidence.</p>
+                    <p>
+                      We <strong>consult</strong> closely to develop a clear
+                      understanding of your surroundings and the challenges you
+                      are facing, so you can navigate with clarity and
+                      confidence.
+                    </p>
                   </div>
                 </div>
                 <!-- Export Coaching Step End -->
 
                 <!-- Export Coaching Step Start -->
-                <div class="export-coaching-step" style="width: calc(33.33% - 67px); flex: 1;">
+                <div
+                  class="export-coaching-step"
+                  style="width: calc(33.33% - 67px); flex: 1"
+                >
                   <div class="icon-box">
-                    <i class="bi bi-compass" style="font-size: 30px; color: var(--white-color);"></i>
+                    <i
+                      class="bi bi-compass"
+                      style="font-size: 30px; color: var(--white-color)"
+                    ></i>
                   </div>
                   <div class="export-coaching-step-content">
-                    <p>With those insights, we <strong>develop</strong> the direction to pursue, ensuring every step aligns to your strategic goals.</p>
+                    <p>
+                      With those insights, we <strong>develop</strong> the
+                      direction to pursue, ensuring every step aligns to your
+                      strategic goals.
+                    </p>
                   </div>
                 </div>
                 <!-- Export Coaching Step End -->
 
                 <!-- Export Coaching Step Start -->
-                <div class="export-coaching-step" style="width: calc(33.33% - 67px); flex: 1;">
+                <div
+                  class="export-coaching-step"
+                  style="width: calc(33.33% - 67px); flex: 1"
+                >
                   <div class="icon-box">
-                    <i class="bi bi-map" style="font-size: 30px; color: var(--white-color);"></i>
+                    <i
+                      class="bi bi-map"
+                      style="font-size: 30px; color: var(--white-color)"
+                    ></i>
                   </div>
                   <div class="export-coaching-step-content">
-                    <p>Finally, we <strong>implement</strong> a precise and actionable course designed to move forward with purpose and control. </p>
+                    <p>
+                      Finally, we <strong>implement</strong> a precise and
+                      actionable course designed to move forward with purpose
+                      and control.
+                    </p>
                   </div>
                 </div>
                 <!-- Export Coaching Step End -->
@@ -284,7 +343,10 @@
               <!-- About Us Img End -->
 
               <!-- About Us Img Start -->
-              <div class="about-us-img-2" style="max-width: 200px; width: 200px;">
+              <div
+                class="about-us-img-2"
+                style="max-width: 200px; width: 200px"
+              >
                 <figure class="image-anime">
                   <img src="img/richpagano.jpg" alt="" />
                 </figure>
@@ -340,8 +402,10 @@
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay="0.5s">
                   Our coaching services provide personalized strategies for both
-                  personal growth and business success.<strong>We focus on your unique
-                  challenges, offering expert guidance to help you.</strong>
+                  personal growth and business success.<strong
+                    >We focus on your unique challenges, offering expert
+                    guidance to help you.</strong
+                  >
                 </p>
               </div>
               <!-- Section Title End -->
@@ -368,8 +432,9 @@
                 <div class="service-item-content">
                   <h3>Individuals</h3>
                   <p>
-                    We partner with you to align your personal values with your daily actions 
-                    ensuring that every step you take is toward a greater fulfillment. 
+                    We partner with you to align your personal values with your
+                    daily actions ensuring that every step you take is toward a
+                    greater fulfillment.
                   </p>
                 </div>
               </div>
@@ -385,9 +450,9 @@
                 <div class="service-item-content">
                   <h3>Corporate</h3>
                   <p>
-                    Develop the “C-Suite” mindset. We coach leaders to communicate with 
-                    impact, retain top talent and foster a culture of high engagement and 
-                    accountability. 
+                    Develop the “C-Suite” mindset. We coach leaders to
+                    communicate with impact, retain top talent and foster a
+                    culture of high engagement and accountability.
                   </p>
                 </div>
               </div>
@@ -403,9 +468,9 @@
                 <div class="service-item-content">
                   <h3>Faith Based</h3>
                   <p>
-                    Values-aligned coaching that integrates faith principles with practical 
-                    leadership tools, empowering individuals and ministries to grow, serve, 
-                    and lead with purpose. 
+                    Values-aligned coaching that integrates faith principles
+                    with practical leadership tools, empowering individuals and
+                    ministries to grow, serve, and lead with purpose.
                   </p>
                 </div>
               </div>
@@ -420,9 +485,7 @@
 
                 <div class="service-item-content">
                   <h3>Public Speaking</h3>
-                  <p>
-                    Seminars, Conferences, Workshops, Staff Retreats
-                  </p>
+                  <p>Seminars, Conferences, Workshops, Staff Retreats</p>
                 </div>
               </div>
               <!-- Service Item Start -->
@@ -684,9 +747,7 @@
             <div class="about-footer">
               <!-- Section Title Start -->
               <div class="section-title">
-                <h2>
-                  Let's Navigate Together
-                </h2>
+                <h2>Let's Navigate Together</h2>
               </div>
               <!-- Section Title End -->
             </div>
